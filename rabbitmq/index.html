@@ -1,0 +1,35 @@
+<!DOCTYPE Html>
+<html> 
+  <body>
+    <ul id="eventlist"> </ul>
+
+    <script>              
+      var eventList = document.getElementById("eventlist");
+      var evtSource = new EventSource("https://rmq-test.herokuapp.com/msg");
+
+      var newElement = document.createElement("li");
+      newElement.innerHTML = "Messages:";
+      eventList.appendChild(newElement);
+
+      console.log("wut");
+
+      evtSource.onmessage = function(e) {
+          console.log("received event");
+          console.log(e);
+          var newElement = document.createElement("li");
+
+          newElement.innerHTML = "message: " + e.data;
+          eventList.appendChild(newElement);
+      };      
+
+      evtSource.onerror = function(e) {
+          console.log("EventSource failed.");
+          console.dir(e);
+      };
+
+      console.log(evtSource);
+
+    </script>
+
+  </body>
+</html>

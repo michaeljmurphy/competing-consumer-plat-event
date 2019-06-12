@@ -1,0 +1,5 @@
+sf/rmq-plat-event/.sfdx
+rabbitmq/node_modules
+rabbitmq/.env
+#*
+exec.org
