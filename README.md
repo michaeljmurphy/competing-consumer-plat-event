@@ -24,3 +24,6 @@ https://jsforce.github.io/document/
 # Proof of Concept
 ![architecture](https://github.com/michaeljmurphy/competing-consumer-plat-event/blob/master/Heroku%20RabbitMQ%20(2).png?raw=true)
 
+# Result
+Workers compete to execute the platform events, no work is duplicated
+![result](https://github.com/michaeljmurphy/competing-consumer-plat-event/blob/master/Screen%20Shot%202019-06-14%20at%2011.56.29.png?raw=true)
