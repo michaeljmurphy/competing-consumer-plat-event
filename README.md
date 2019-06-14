@@ -1,6 +1,4 @@
-Summary
-
-*Challenge*
+Challenge
 
 How to distribute platform events to n elastically scaled vms
 
@@ -13,19 +11,15 @@ Solution
 * NodeJS consumers compete for work on the MQ
     
 
-*RabbitMQ on Heroku*
+RabbitMQ on Heroku
 https://elements.heroku.com/addons/cloudamqp
 
-*Competing Consumers Pattern*
+Competing Consumers Pattern
 https://www.rabbitmq.com/tutorials/tutorial-two-javascript.html
 
-*JSForce*
+JSForce
 https://jsforce.github.io/document/
 
 
 Proof of Concept
-
-*Architecture*
-
-
-![architecture](https://raw.githubusercontent.com/michaeljmurphy/competing-consumer-plat-event/master/Heroku RabbitMQ (2).png)
+![architecture]("https://raw.githubusercontent.com/michaeljmurphy/competing-consumer-plat-event/master/Heroku RabbitMQ (2).png")
